@@ -36,10 +36,8 @@ def students_id(id):
 7. return jsonify({'error': 'Not Found'}): If no matching student is found, this line returns a JSON response with an error message indicating that the student was not found.
 '''
 
+
+
 if __name__ == '__main__':
-    app.run(
-        host='127.0.0.1', 
-        port=5000, 
-        debug=True
-    )
+    app.run(debug=True)
 
