@@ -13,9 +13,7 @@ def students_list():
     return jsonify(students)
 '''
 @app.route('/student_list') : This line is a Flask route decorator. It associates the URL path /student_list with the function students_list. When a client makes an HTTP GET request to this URL, the students_list function will be executed.
-
 def students_list() : This line defines a function named students_list. This function will handle the HTTP GET requests made to the /student_list route.
-
 return jsonify(students) : This line returns a JSON response containing the list of students. The jsonify function is used to convert the students list (a Python list of dictionaries) into a JSON-formatted response, which is then sent back to the client. This allows clients to easily consume the data in a structured format.
 '''
 
